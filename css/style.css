@@ -1,0 +1,162 @@
+body {
+  font-family: Roboto;
+  background: #8E0E00;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #73C8A9, #373B44);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #73C8A9, #373B44);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: font-family: 'Roboto', sans-serif;
+}
+
+#container {
+  width: 35%;
+  margin: 160px auto;
+  background: #fff;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  text-align: center;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  padding-bottom: 40px;
+}
+#header-tip{
+  background: linear-gradient(to left, #485563, #29323c);
+  color: white;
+  padding: 30px 10px 30px 10px;
+  text-transform: uppercase;
+  font-size: 30px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  font-weight: bold;
+}
+#bill_amount {
+  font-size: 14px;
+  /*color: #2980b9;*/
+  color: #000;
+  background-color: #f7f7f7;
+  width: 20%;
+  padding: 5px 5px 8px 8px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#bill_amount:focus {
+  background: #fff;
+  outline: none;
+}
+
+#people_amount {
+  width: 30%;
+  padding: 5px 5px 8px 8px;
+  color: #red;
+  background-color: #f7f7f7;
+  font-size: 14px;
+  border-radius: 10px;
+  text-align: center;
+}
+#people_ammount:focus{
+  outline: none;
+  background: #fff;
+}
+
+.dollarSign {
+  display: inline;
+}
+
+#service_rate {
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='30' viewBox='0 0 24 24' width='50' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 5px;
+  border: 1px solid #dfdfdf;
+  width: 31%;
+
+}
+
+
+button {
+  text-transform: uppercase;
+  font-weight: bold;
+  display: block;
+  margin: 30px auto;
+  background: #AD133A;
+  border-radius: 5px;
+  width: 200px;
+  height: 50px;
+  font-size: 17px;
+  color: white;
+}
+
+button:hover {
+  background: #4c2827;
+  border-bottom-color: #111;
+}
+
+button:active {
+  position: relative;
+  top: 1px;
+}
+
+#totalTip {
+  font-size: 30px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+#totalTip:before {
+  content: "Tip amount";
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+  text-transform: uppercase;
+}
+
+#totalTip sup {
+  font-size: 20px;
+  top: -18px;
+}
+
+#totalTip small {
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+}
+/* media queries */
+@media only screen and (max-width: 500px) {
+
+  body{
+    background: linear-gradient(to left, #83a4d4, #b6fbff);
+  }
+  #header-tip{
+    font-size: 24px;
+  }
+  #container{
+    width: 90%;
+    margin:50px auto;
+
+      }
+  #service_rate  {
+    font-size: 14px;
+    width: 38%;
+  }
+  #bill_amount{
+    width: 25%;
+    padding: 10px;
+  }
+  #people_amount{
+    width: 35%;
+    padding: 10px;
+
+  }
+  h2{
+    font-size: 22px;
+  }
+}
+/* font */

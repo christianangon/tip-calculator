@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Tip Calculator">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    Tip Calculator
+  </title>
+</head>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+
+<body>
+
+<div id="container">
+  <div id="header-tip">Tip Calculator</div>
+  <div id="result">
+    <form>
+      <p><h2>How much was your bill?</h2></p>
+        <p> ₱<input id="bill_amount" type="number" placeholder="Bill Amount" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Bill Amount'" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type = "number" maxlength = "6"  data-a-sign="" data-a-dec="," data-a-sep=".">
+        </p>
+      <p><h2>How many people are sharing the bill?</h2></p>
+    <input id="people_amount" type="number" placeholder="Number of People" onfocus="this.placeholder =''" onblur="this.placeholder ='Number of People'" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type = "number" maxlength = "4">
+          <p><h2>Rate the service</h2></p>
+            <p>
+              <select id="service_rate">
+                <option disabled selected value="0">Choose</option>
+                <option value="0.3" id="rate1">30&#37; &#9733;&#9733;&#9733;&#9733;&#9733;</option>
+                <option value="0.2" id="rate1">20&#37; &#9733;&#9733;&#9733;&#9733;</option>
+                <option value="0.15" id="rate1">15&#37; &#9733;&#9733;&#9733;</option>
+                <option value="0.1" id="rate1">10&#37; &#9733;&#9733;</option>
+                <option value="0.05" id="rate1">5&#37; &nbsp; &#9733;</option>
+               </select>
+            </p>
+    </form>
+
+    <button type="button" id="calculate">Calculate!</button>
+
+  </div>
+  <!--calculator end-->
+  <div id="totalTip">
+    <sup>₱</sup><span id="tip">0.00</span>
+    <small id="each">each</small>
+  </div>
+  <!--totalTip end-->
+
+</div>
+<script type="text/javascript" src="js/index.js"></script>
+<script>
+ jQuery(function($) {
+$('#bill_amount').autoNumeric('init');   
+ });
+</script>
+<!--container end-->
+</body>
+
+</html>
